@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor – PixDib</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1 class="logo">✏️ Editor</h1>
+    <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="perfil.html">Perfil</a>
+    </nav>
+</header>
+
+<div class="editor-container">
+    <canvas id="canvas" width="256" height="256"></canvas>
+
+    <div class="tools">
+        <label>Color: <input type="color" id="colorPicker"></label>
+        <button id="clearBtn">🧹 Limpiar</button>
+        <button id="saveBtn">💾 Publicar</button>
+
+        <h3>Frames</h3>
+        <button id="frameAdd">➕ Añadir frame</button>
+        <button id="framePlay">▶ Reproducir</button>
+        <div id="frameList"></div>
+
+        <button id="exportGIF">📤 Exportar GIF</button>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
